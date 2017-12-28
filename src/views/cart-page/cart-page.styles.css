@@ -1,0 +1,16 @@
+.page-container {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  :global(.search) {
+    justify-content: center;
+  }
+  :global(.cart) {
+    justify-content: center;
+  }
+  :global(.tracks) {
+    justify-content: center;
+  }
+  :global(.mdl-cell) {
+    margin: 0;
+  }
+}

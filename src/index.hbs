@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Backbone with TypeScript</title>
+
+    {{#each htmlWebpackPlugin.files.css}}
+      <link rel="stylesheet" href="{{htmlWebpackPlugin.options.path}}{{this}}" />
+    {{/each}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Itunes Music Search Cart BB</span>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+      <div id="root"></div>
+    </main>
+
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Documentations:</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li>
+            <a
+              target="_blank"
+              href="https://benmccormick.org/2015/07/06/backbone-and-es6-classes-revisited/">
+              Backbone and ES6 Classes
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://webpack.js.org/">
+              Webpack
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://handlebarsjs.com/">
+              Handlebarsjs
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://facebook.github.io/jest/">
+              Jest (testing)
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://getmdl.io/index.html">
+              Material design Lite
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    {{#each htmlWebpackPlugin.files.js}}
+      <script type="text/javascript" src="{{htmlWebpackPlugin.options.path}}{{this}}"></script>
+    {{/each}}
+  </body>
+</html>

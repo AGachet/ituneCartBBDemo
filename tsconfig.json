@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"rootDir": ".",
+		"outDir": "./dist/",
+		"sourceMap": true,
+		"watch": true,
+		"lib": [
+			"dom",
+			"es6"
+		],
+		"types": [
+			"node",
+			"backbone",
+			"jquery",
+			"underscore",
+			"handlebars",
+			"jest",
+			"webpack"
+		]
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

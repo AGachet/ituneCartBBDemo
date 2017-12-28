@@ -1,0 +1,30 @@
+<span>
+  {{#if inList}}
+  You've got {{inCart}} tracks from {{inList}} in your cart
+    {{#if totalPrice}}
+    for a total of {{totalPrice}}
+    {{/if}}
+  {{else}}
+  Would you like to buy some music tracks? Let's try to search an artist first!
+  {{/if}}
+</span>
+
+{{#if totalPrice}}
+  {{#unless showSelectedTracksOnly}}
+  <button class="
+      mdl-button mdl-js-button
+      mdl-button--raised mdl-js-ripple-effect
+    ">
+    Show cart
+  </button>
+  {{/unless}}
+
+  {{#if showSelectedTracksOnly}}
+  <button class="
+      mdl-button mdl-js-button mdl-button--raised
+      mdl-js-ripple-effect mdl-button--accent
+      ">
+    Pay {{totalPrice}}
+  </button>
+  {{/if}}
+{{/if}}

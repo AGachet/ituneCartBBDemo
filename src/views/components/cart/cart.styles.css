@@ -1,0 +1,6 @@
+.cart {
+  display: flex;
+  min-height: 36px;
+  align-items: flex-end;
+  justify-content: space-between;
+}

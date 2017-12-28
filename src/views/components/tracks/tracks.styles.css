@@ -1,0 +1,20 @@
+.tracks-list {
+  :global(table) {
+    width: 100%;
+    table-layout: fixed;
+    :global(tbody tr) {
+      cursor: pointer;
+    }
+    :global(.add-to-cart) {
+      width: 85px;
+      text-align: center;
+    }
+    :global(.text) {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100%;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{{#if this}}
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="add-to-cart">
+        <span>Add</span>
+      </th>
+      <th class="mdl-data-table__cell--non-numeric">
+        <span class="text title">Title</span>
+      </th>
+      <th class="mdl-data-table__cell--non-numeric">
+        <span class="text artistName">Artist</span>
+      </th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this}}
+    {{#if display}}
+    <tr class="row" data-id="{{id}}">
+      <td class="add-to-cart">
+        <label for="title_{{@index}}">
+          <input type="checkbox" id="title_{{@index}}" {{#if addedToCart}}checked{{/if}}>
+        </label>
+      </td>
+      <td class="mdl-data-table__cell--non-numeric">
+        <span class="text title">{{title}}</span>
+      </td>
+      <td class="mdl-data-table__cell--non-numeric">
+        <span class="text artistName">{{artistName}}</span>
+      </td>
+      <td>
+        <span>{{formatedPrice}}</span>
+      </td>
+    </tr>
+    {{/if}}
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
